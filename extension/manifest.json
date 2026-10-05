@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "UNIGRAM 云丢 - 取代TG的小中转站",
+  "version": "1.0.0",
+  "description": "直接取代TG，右键一键丢给PikPak + Muse 8G云电脑，UNIGRAM 0.1秒本地分类",
+  "permissions": [
+    "contextMenus",
+    "storage",
+    "notifications"
+  ],
+  "host_permissions": [
+    "https://*.mypikpak.com/*",
+    "https://*.claude.com/*",
+    "https://*.pikpak.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "UNIGRAM 云丢"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}

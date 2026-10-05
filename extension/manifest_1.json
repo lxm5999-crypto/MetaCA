@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Meta 湄嗒 - a cloud-based airdrop",
+  "version": "1.0.0",
+  "description": "Meta 湄嗒 | 直接取代TG的UNIGRAM云空投，右键一键空投到PikPak原生 + Muse 8G云电脑",
+  "permissions": [
+    "contextMenus",
+    "storage",
+    "notifications"
+  ],
+  "host_permissions": [
+    "https://*.mypikpak.com/*",
+    "https://*.claude.com/*",
+    "https://*.pikpak.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "UNIGRAM 云丢"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
